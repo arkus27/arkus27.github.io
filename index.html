@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Psico bienestar</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      /* Estilos básicos */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f9f9f9;
+        color: #333;
+      }
+
+      /* Estilos del encabezado */
+      header {
+        background-color: #f0f0f0;
+        padding: 10px;
+      }
+
+      nav ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      nav ul li {
+        display: inline;
+        margin-right: 20px;
+      }
+
+      nav ul li a {
+        text-decoration: none;
+        color: #333;
+      }
+
+      /* Estilos de las secciones */
+      section {
+        padding: 20px;
+        margin-top: 20px;
+      }
+
+      /* Estilos para los botones de servicios */
+      .toggle {
+        cursor: pointer;
+        border: none;
+        background: none;
+        color: #333;
+        font-size: 18px;
+        font-weight: bold;
+      }
+
+      .toggle:focus {
+        outline: none;
+      }
+
+      .hidden {
+        display: none;
+      }
+
+      /* Estilos para los servicios */
+      .servicio {
+        margin-bottom: 20px;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 10px;
+      }
+
+      /* Estilos para los perfiles */
+      .perfil-info {
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin-bottom: 20px;
+      }
+
+      /* Estilos para la sección de seguridad */
+      .seguridad-info {
+        margin-bottom: 20px;
+      }
+
+      /* Estilos para el formulario de contacto */
+      .contacto-info {
+        margin-bottom: 20px;
+      }
+
+      /* Estilos para el botón de enviar */
+      input[type="submit"] {
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #0056b3;
+      }
+
+      /* Estilos para el pie de página */
+      footer {
+        text-align: center;
+        padding: 10px;
+        background-color: #f0f0f0;
+        font-size: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#perfiles">Perfiles</a></li>
+          <li><a href="#seguridad">Seguridad y Ética</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="inicio">
+      <h1>Bienvenido a nuestra Plataforma de Terapia en Línea</h1>
+      <!-- Contenido introductorio -->
+      <p>
+        🌟 Descubre una forma innovadora de acceder a sesiones de terapia
+        psicológica desde la comodidad de tu hogar.
+      </p>
+      <p>
+        🛡️ Nuestra plataforma está diseñada para ofrecerte un espacio seguro y
+        ético donde terapeutas cualificados te brindarán apoyo profesional.
+      </p>
+      <p>
+        🤝 Con una interfaz intuitiva y medidas de seguridad robustas,
+        priorizamos tu privacidad y bienestar.
+      </p>
+      <p>
+        💡 Da el primer paso hacia una mejor salud mental con sesiones
+        terapéuticas online confiables y centradas en ti.
+      </p>
+    </section>
+
+    <section id="servicios">
+      <h2>Nuestros Servicios</h2>
+      <!-- Descripción de servicios -->
+      <div class="servicio">
+        <button class="toggle">▼ Sesiones de Terapia en Vivo</button>
+        <p class="hidden">
+          Conexiones en tiempo real entre terapeutas y clientes para sesiones
+          individuales o grupales.
+        </p>
+      </div>
+      <!-- ... (repetir para cada servicio) -->
+      <div class="servicio">
+        <button class="toggle">▼ Mensajería Segura</button>
+        <p class="hidden">
+          Un sistema de mensajería dentro de la plataforma que permite a los
+          usuarios comunicarse de forma segura entre sesiones.
+        </p>
+      </div>
+
+      <div class="servicio">
+        <button class="toggle">▼ Biblioteca de Recursos</button>
+        <p class="hidden">
+          Acceso a recursos educativos, ejercicios de relajación, lecturas
+          recomendadas y herramientas para el auto-cuidado.
+        </p>
+      </div>
+
+      <div class="servicio">
+        <button class="toggle">▼ Calendario de Citas</button>
+        <p class="hidden">
+          Funcionalidad para programar y gestionar citas de terapia de manera
+          fácil y flexible.
+        </p>
+      </div>
+
+      <div class="servicio">
+        <button class="toggle">▼ Perfiles Detallados</button>
+        <p class="hidden">
+          Perfiles completos de terapeutas que incluyan su experiencia,
+          especialidades, horarios disponibles y reseñas de clientes anteriores.
+        </p>
+      </div>
+
+      <div class="servicio">
+        <button class="toggle">▼ Foros o Comunidades</button>
+        <p class="hidden">
+          Espacios de discusión moderados por terapeutas para que los usuarios
+          compartan experiencias y consejos entre ellos.
+        </p>
+      </div>
+
+      <div class="servicio">
+        <button class="toggle">▼ Garantías de Privacidad</button>
+        <p class="hidden">
+          Garantías explícitas y detalles sobre las medidas de seguridad y
+          protección de datos implementadas
+        </p>
+      </div>
+
+      <div class="servicio">
+        <button class="toggle">▼ Asesoramiento Ético</button>
+        <p class="hidden">
+          Información sobre los protocolos éticos seguidos por los terapeutas y
+          la plataforma en general.
+        </p>
+      </div>
+    </section>
+
+    <section id="perfiles">
+      <h2>Perfiles</h2>
+      <!-- Perfiles de terapeutas y clientes -->
+      <section id="perfil-terapeuta">
+        <h2>Perfil del Terapeuta</h2>
+        <div class="perfil-info">
+          <h3>Betzaida Olenka Puma Zuñiga</h3>
+          <p>
+            Experiencia: Más de 10 años trabajando como terapeuta profesional en
+            diversas instituciones y práctica privada.
+          </p>
+          <p>
+            Enfoques Terapéuticos: Enfoque humanista centrado en la persona,
+            terapia cognitivo-conductual y terapia familiar.
+          </p>
+          <p>
+            Disponibilidad: Lunes a viernes de 9:00 a.m. a 5:00 p.m. Horario
+            flexible con previa coordinación.
+          </p>
+          <!-- Más información y detalles del terapeuta -->
+        </div>
+      </section>
+    </section>
+
+    <section id="seguridad">
+      <h2>Seguridad y Ética</h2>
+      <div class="seguridad-info">
+        <h3>Privacidad y Protección de Datos</h3>
+        <p>
+          Nuestra plataforma utiliza cifrado de extremo a extremo para proteger
+          la privacidad de las comunicaciones entre terapeutas y clientes.
+          Cumplimos con las regulaciones de protección de datos (GDPR, HIPAA,
+          etc.) para garantizar la seguridad de la información.
+        </p>
+
+        <h3>Confidencialidad de la Información</h3>
+        <p>
+          Toda la información compartida durante las sesiones terapéuticas se
+          maneja con estricta confidencialidad. Los terapeutas están obligados a
+          mantener la confidencialidad de los datos de los clientes, excepto en
+          casos específicos establecidos por la ley o cuando exista un riesgo
+          para la seguridad.
+        </p>
+
+        <h3>Ética Profesional</h3>
+        <p>
+          Nuestros terapeutas siguen un código ético riguroso que incluye
+          respeto, integridad, competencia profesional, responsabilidad y
+          confianza en la relación terapéutica. Se promueve un entorno seguro y
+          ético para todas las interacciones.
+        </p>
+        <!-- Más detalles sobre seguridad y ética -->
+      </div>
+    </section>
+
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <div class="contacto-info">
+        <h3>Información de Contacto</h3>
+        <p><strong>Dirección:</strong> Av. Principal #123, Ciudad, País</p>
+        <p><strong>Teléfono:</strong> +123456789</p>
+        <p><strong>Correo Electrónico:</strong> info@terapiasenlinea.com</p>
+
+        <h3>Redes Sociales</h3>
+        <ul>
+          <li>
+            <a href="https://www.facebook.com/terapiasenlinea" target="_blank"
+              >Facebook</a
+            >
+          </li>
+          <li>
+            <a href="https://www.twitter.com/terapiasenlinea" target="_blank"
+              >Twitter</a
+            >
+          </li>
+          <li>
+            <a href="https://www.instagram.com/terapiasenlinea" target="_blank"
+              >Instagram</a
+            >
+          </li>
+          <!-- Agrega más redes sociales si es necesario -->
+        </ul>
+
+        <!-- Formulario de contacto -->
+        <form action="/enviar-mensaje" method="post">
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required /><br />
+
+          <label for="correo">Correo Electrónico:</label>
+          <input type="email" id="correo" name="correo" required /><br />
+
+          <label for="mensaje">Mensaje:</label><br />
+          <textarea id="mensaje" name="mensaje" rows="4" required></textarea
+          ><br />
+
+          <input type="submit" value="Enviar" />
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <p>
+        Derechos reservados © 2023 Plataforma de Terapia en Línea Proyecto de
+        trabajo Universitario
+      </p>
+    </footer>
+
+    <script>
+      const toggles = document.querySelectorAll(".toggle");
+
+      toggles.forEach((toggle) => {
+        toggle.addEventListener("click", () => {
+          const content = toggle.nextElementSibling;
+          content.classList.toggle("hidden");
+          toggle.textContent = content.classList.contains("hidden")
+            ? "▶ " + toggle.textContent.slice(2)
+            : "▼ " + toggle.textContent.slice(2);
+        });
+      });
+    </script>
+  </body>
+</html>
